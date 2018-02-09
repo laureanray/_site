@@ -1,0 +1,446 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    background: #FAFAFA;
+}
+
+body#maintenance{
+    background: #fafafa;
+    background-image: url('../img/pattern3.png');
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.sticky{
+    position: fixed;
+    width: 100%;
+    min-height: 20px;
+    top: 0;
+    background: #00c7a2;
+}
+.sticky p{
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Misc */
+/* Squares */
+
+.square{
+    width: 5px;
+    height: 5px;
+    background: #373737;
+    float: left;
+    margin: 0 5px 0 5px;
+    border-radius: 50%;
+}
+.squares{
+    width: auto;
+    display: inline-block;
+}
+
+.line{
+    width: 160px;
+    height: 1px; 
+    margin: 5px 0 5px 0;
+    background: #b8b8b8;
+
+}
+
+.fix{
+    height: 110px;
+}
+@media (max-width: 768px){
+    nav {
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+    nav ul{
+        display: none;
+    }
+    /* Footer */
+    footer{
+        width: 100%;
+        height: 200px;
+        border-top: 1px solid #e7e7e7;
+    }
+    footer .branding{
+        width: 300px;
+        height: 100px
+    }
+    footer .branding img{
+        margin-top: 30px;
+    }
+    footer .branding h1{
+        font-family: 'MuseoSans_500', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        color: #555555;
+        margin: 0;
+        margin-top: 20px;   
+        
+        padding: 0;
+    }
+    footer .branding h2{
+        font-family: 'MuseoSans_500', sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: #555555;
+        margin: 0;
+        padding: 2px 0 2px 0;
+    }
+
+    /* Maintenance */
+    .maintenance-wp{
+        height: 100vh;
+        width: 100%;
+        display: table;
+        margin-top: -60px;
+    }
+    .maintenance{
+        padding: 0 50px 0 50px;
+        width: 100%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .maintenance h1{
+        font-weight: 700;
+        color: #00c7a2;
+        padding: 15px 0 25px 0;
+        font-size: 45px;
+        text-align: center!important;
+    }
+    .maintenance p{
+        font-family: 'MuseoSans_500', sans-serif;
+        color: #2e2e2e;
+        font-size: 18px;
+    }
+    .m-container{
+        min-width: 1px!important;
+        height: auto;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+    }
+    .maintenance img{
+        animation: rotate_slow 10s linear infinite;
+    }
+}
+
+/* Desktop Version - Commin */
+@media (min-width: 768px){
+    /* Header */
+ 
+ 
+    /* Navigation */
+    nav{
+       
+        height: 50px;
+        width: 100%;
+        background: #fafafa;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      
+       
+    }
+    nav ul li a{
+        display: inline-block;  
+        font-size: 12px;
+        width: 120px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 2px 0 5px 0;
+        margin: 0 5px 0 5px;
+        color: #2e2e2e;
+    }
+    nav ul li a:hover{
+        color: #00c7a2;
+
+    }
+    nav ul li{
+        float: left;
+    }
+    nav ul{
+        float: right;
+        width: auto;
+    }
+    nav .branding{
+        width: auto;
+        height: 50px;
+        float: left;
+    }
+    nav .branding img{
+        padding: 10px 5px 0 5px;
+    }
+    nav{
+        text-align: center;
+    }
+    /* Section */
+    section{
+        min-height: 300px;
+        text-align: center;
+        padding: 100px 0 100px 0;
+    }
+    #floral{
+        
+        position: absolute;
+        margin-top: -200px;
+        margin-left: -100px;
+        z-index: -1;
+        text-align: center;
+        display: inline-block;
+    }
+    section h1{
+        font-weight: 300;
+        color: #00c7a2;
+        font-size: 65px;
+        margin: 0;
+
+    }
+    section h2{
+        font-weight: 300;
+        color: #202020;
+        font-size: 32px;
+        margin: 0;
+    }
+    section p{
+        padding: 0 5px 0 5px;
+        font-family: 'MuseoSans_500', sans-serif;
+        font-size: 16px;
+        color: #2e2e2e;
+    }
+
+    section .links button{
+        width: 175px;
+        height: 40px;
+        display: inline-block;
+        background: transparent;
+        border: 1px solid #555555;
+        font-family: 'MuseoSans_500', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    section .links button:hover{
+        background: #00c7a2;
+        color: #fafafa;
+        border: 0;
+        transition: all 0.3s ease;
+    }
+    section .links{
+        margin: 25px 0 25px 0;
+        width: 400px;
+        display: inline-block;
+    }
+    section .links button#hire{
+        float: left;
+    }
+    
+    section .links button#webiste{
+        float: right;
+    }
+
+    /* Section - Projects */
+    section#projects{
+        background: #011115;
+    }
+
+    /* Blog Login */
+    .wrapper{
+        width: 100%;
+        height: 100vh;
+        background: #202020;
+    }
+    .wrapper .left{
+        display: block;
+        width: 65%;
+        height: 100vh;
+        float: left;
+        background: #011115;
+    }
+    .wrapper .right{
+        display: block;
+        width: 35%;
+        height: 100vh;
+        float: right;
+        background: #00c7a2;
+        background-image: url('../img/pattern.png');
+        display: table;
+        height: 100vh;
+    }
+    form.login-form h1{
+        text-align: center;
+        color: #fafafa;
+        font-weight: 300;
+        width: 100%;
+        font-size: 28px;
+    }
+    form.login-form {
+        width: 100%;
+        display: inline-block;
+    }
+    form.login-form input{
+        border: 0;
+        border-bottom: 1px solid #e7e7e7;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+
+        font-weight: 500;
+        height: 25px;
+        width: 100%;
+        background: transparent;
+        color: #fafafa;
+        margin: 15px 0 15px 0;
+        text-align: left;
+        transition: all 0.3s ease;
+    }
+    form.login-form a{
+        color: #e7e7e7;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    form.login-form a:hover, form.login-form a:focus{
+        outline: 0;
+        color: #011115;
+        font-weight: 600;
+    }
+    form.login-form input:focus{
+        outline: 0;
+
+        height: 60px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 500;;
+        transition: all 0.3s ease;
+    }
+    form.login-form input::-webkit-input-placeholder{
+        color: #e7e7e7!important;
+        
+    }
+    form.login-form button.classic{
+        width: 150px;
+        height: 40px;
+        margin: 10px 0 10px 0;
+        background: #fafafa;
+        color: #00c7a2;
+        font-family: 'Montserrat', sans-serif;
+        border: 0;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+    form.login-form button.classic:hover, form.login-form button.classic:focus{
+        width: 50%;
+        background: #011115;
+        color: #fafafa;
+        outline: 0;
+        transition: all 0.2s ease;
+    }
+    .login{
+        padding: 0 50px 0 50px;
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    /* Footer */
+
+    footer{
+        width: 100%;
+        height: 200px;
+        border-top: 1px solid #e7e7e7;
+    }
+    footer .branding{
+        width: 300px;
+        height: 100px;
+    }
+    footer .branding img{
+        margin-top: 30px;
+    }
+    footer .branding h1{
+        font-family: 'MuseoSans_500', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        color: #555555;
+        margin: 0;
+        margin-top: 20px;   
+        padding: 0;
+    }
+    footer .branding h2{
+        font-family: 'MuseoSans_500', sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        color: #555555;
+        margin: 0;
+        padding: 2px 0 2px 0;
+    }
+    
+    /* Maintenance */
+    .maintenance-wp{
+        height: 100vh;
+        width: 100%;
+        display: table;
+    }
+    .maintenance{
+        padding: 0 50px 0 50px;
+        width: 100%;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .maintenance h1{
+        font-weight: 700;
+        color: #00c7a2;
+        padding: 15px 0 25px 0;
+        font-size: 45px;
+        text-align: left;
+    }
+    .maintenance p{
+        font-family: 'MuseoSans_500', sans-serif;
+        color: #2e2e2e;
+        font-size: 18px;
+    }
+    .m-container{
+        min-width: 400px;
+        min-height: 200px;
+        display: inline-block;
+        text-align: center;
+        padding: 25px 20px 25px 20px;
+    }
+    .maintenance img{
+        animation: rotate_slow 10s linear infinite;
+    }
+}
+/* Mobile Common */
+
+/* UI AND UX ANIMATIONS */
+@keyframes rotate_slow{
+    0% {
+        transform: rotate(0deg);
+    }  
+    100%{
+        transform: rotate(360deg);
+    }
+}
